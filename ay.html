@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <label>Input the year</label>
+        <input class="year" type="text" style="padding: 10px 20px;">
+
+        <button type="submit" class="btn btn">Convert</button>
+
+    </form>
+
+    <p class="show"></p>
+
+</div>
+<script>
+
+    const btn = document.querySelector('.btn').addEventListener('click', function(e){
+
+        const year = document.querySelector('.year').value;
+        let show = document.querySelector('.show');
+
+        if (year >= 1990){
+            show.innerHTML = year + "Century";
+
+        }
+        else {
+            show.innerHTML = "ggggggggg"
+        }
+
+        
+
+
+
+        e.preventDefault();
+    })
+    
+
+
+
+</script>
+<script src="traingle.js"></script>
+</body>
+</html>
